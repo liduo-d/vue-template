@@ -1,0 +1,22 @@
+{
+  "name": "vue-template",
+  "version": "1.0.0",
+  "description": "A vue template",
+  "main": "index.js",
+  "scripts": {
+    "test": "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001bhtml)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/liduo-d/vue-template.git"
+  },
+  "author": "liduo-d",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liduo-d/vue-template/issues"
+  },
+  "homepage": "https://github.com/liduo-d/vue-template#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
+}
