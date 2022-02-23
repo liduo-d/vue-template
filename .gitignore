@@ -1,20 +1,24 @@
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Dependency directories
-node_modules/
+node_modules
+dist
+dist-ssr
+*.local
 
-# dotenv environment variables file
-.prettierrc
-.git
-.vscode
-.env
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
 .idea
 .DS_Store
-dist
-
-# useless files
-.bak
-config.json
-*.config.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

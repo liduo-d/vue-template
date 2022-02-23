@@ -1,2 +1,2 @@
 # vue-template
-A web app template based on Vue
+A web app template based on Vue3

@@ -1,0 +1,25 @@
+$--color-white: #fff;
+
+:root {
+  --systemThemeColor: pink;
+  --systemThemeColorLight1: #{mix($--color-white, pink, 10%)};
+  --systemThemeColorLight2: #{mix($--color-white, pink, 20%)};
+  --systemThemeColorLight3: #{mix($--color-white, pink, 30%)};
+  --systemThemeColorLight4: #{mix($--color-white, pink, 40%)};
+  --systemThemeColorLight5: #{mix($--color-white, pink, 50%)};
+  --systemThemeColorLight6: #{mix($--color-white, pink, 60%)};
+  --systemThemeColorLight7: #{mix($--color-white, pink, 70%)};
+  --systemThemeColorLight8: #{mix($--color-white, pink, 80%)};
+  --systemThemeColorLight9: #{mix($--color-white, pink, 90%)};
+}
+
+$systemTheme: var(--systemThemeColor);
+$systemThemeHover: var(--systemThemeColorLight6);
+
+$navbarTheme: #242f42;
+$sidebarTheme: #324157;
+$sidebarColor: #ffffffb3;
+
+
+
+

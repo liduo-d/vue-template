@@ -1,22 +1,36 @@
 {
   "name": "vue-template",
-  "version": "1.0.0",
-  "description": "A vue template",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "test": "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001bhtml)"
+    "dev": "vite",
+    "serve": "vite serve --mode dev",
+    "start": "vite serve --mode dev",
+    "prod": "vite serve --mode prod",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/liduo-d/vue-template.git"
-  },
-  "author": "liduo-d",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/liduo-d/vue-template/issues"
-  },
-  "homepage": "https://github.com/liduo-d/vue-template#readme",
   "dependencies": {
-    "vue": "^2.6.14"
+    "@element-plus/icons": "^0.0.11",
+    "axios": "^0.26.0",
+    "element-plus": "^2.0.2",
+    "jsondiffpatch": "^0.4.1",
+    "leader-line-vue": "^2.1.1",
+    "mavon-editor": "^2.10.4",
+    "nprogress": "^0.2.0",
+    "path-browserify": "^1.0.1",
+    "sortablejs": "^1.14.0",
+    "vue": "^3.2.25",
+    "vue-cropperjs": "^5.0.0",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2",
+    "wangeditor": "^4.7.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.8",
+    "sass-loader": "^12.6.0",
+    "vite": "^2.7.2"
   }
 }

@@ -1,0 +1,32 @@
+@import './theme.scss';
+
+:root {
+  --el-color-primary: var(--systemThemeColor);
+
+  --el-color-primary-light-1: var(--systemThemeColorLight1);
+  --el-color-primary-light-2: var(--systemThemeColorLight2);
+  --el-color-primary-light-3: var(--systemThemeColorLight3);
+  --el-color-primary-light-4: var(--systemThemeColorLight4);
+  --el-color-primary-light-5: var(--systemThemeColorLight5);
+  --el-color-primary-light-6: var(--systemThemeColorLight6);
+  --el-color-primary-light-7: var(--systemThemeColorLight7);
+  --el-color-primary-light-8: var(--systemThemeColorLight8);
+  --el-color-primary-light-9: var(--systemThemeColorLight9);
+}
+
+.el-button--default {
+  --el-button-font-color: #ffffff !important;
+  --el-button-bg-color: var(--systemThemeColorLight4) !important;
+  --el-button-border-color: var(--systemThemeColorLight2) !important;
+  --el-button-hover-bg-color: var(--systemThemeColorLight6) !important;
+  --el-button-hover-border-color: var(--systemThemeColorLight8) !important;
+  --el-button-active-bg-color: var(--systemThemeColor) !important;
+  --el-button-active-border-color: var(--systemThemeColorLight3) !important;
+}
+
+.el-tag {
+  --el-tag-bg-color: var(--systemThemeColorLight9);
+  --el-tag-border-color: var(--systemThemeColorLight6);
+  --el-tag-text-color: var(--systemThemeColor);
+  --el-tag-hover-color: var(--systemThemeColorLight4);
+}

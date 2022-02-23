@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "microsoft yahei", 'PingFang SC', "Helvetica Neue", Helvetica, arial, STHeiTi, sans-serif;
+  color: #303133;
+}
+
+a {
+  text-decoration: none;
+}
+
+.move-enter-active,
+.move-leave-active {
+  transition: opacity .3s ease;
+}
+
+.move-enter-from,
+.move-leave-to {
+  opacity: 0;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.background-image-wrap {
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
