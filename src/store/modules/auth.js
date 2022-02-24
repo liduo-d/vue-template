@@ -1,8 +1,8 @@
 export default {
     namespaced: true,
-    state: {
+    state: Object.assign({
         authList: ['*']
-    },
+    }, JSON.parse(sessionStorage.getItem('storeAuth') || null)),
     mutations: {
         updateAuthList(state, data) {
             state.authList = data;

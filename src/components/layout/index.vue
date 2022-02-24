@@ -20,6 +20,7 @@
     window.onunload = () => {
         saveSystemTheme(getSystemThemeByDom());
         sessionStorage.setItem('storeApp', JSON.stringify(store.state.app));
+        sessionStorage.setItem('storeAuth', JSON.stringify(store.state.auth));
     };
 </script>
 
