@@ -28,7 +28,7 @@
 </script>
 
 <template>
-    <div id="app_tags">
+    <div id="appTags">
         <el-tag v-for="(item, index) in tagsList"
                 :key="index.path"
                 size="large"

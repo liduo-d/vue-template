@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <div id="app_breadcrumb" class="flex-row-center">
+    <div id="appBreadcrumb" class="flex-row-center">
         <el-icon style="margin-right: 20px"><more-filled/></el-icon>
         <el-breadcrumb>
             <el-breadcrumb-item v-for="breadcrumb in breadcrumbArray" :key="breadcrumb.path">

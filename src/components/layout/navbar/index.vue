@@ -29,10 +29,10 @@
 </script>
 
 <template>
-    <div id="app_header" class="flex-row-between">
-        <div id="app_logo" class="flex-row-center">
+    <div id="appHeader" class="flex-row-between">
+        <div id="appLogo" class="flex-row-center">
             <img src="@/assets/logo.png" alt="Logo"/>
-            <span id="app_title">Vue Template System</span>
+            <span id="appTitle">Vue Template System</span>
             <el-icon v-if="isCollapse" :size="20" class="pointer" @click="toggleSidebar(false)">
                 <expand/>
             </el-icon>

@@ -36,7 +36,7 @@
 </script>
 
 <template>
-    <div id="app_login" class="background-image-wrap flex-all-center">
+    <div id="appLogin" class="background-image-wrap flex-all-center">
         <div class="login-wrap flex-col">
             <div class="login-title">LOGIN</div>
             <el-form ref="loginRef"

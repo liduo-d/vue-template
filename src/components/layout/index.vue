@@ -25,13 +25,13 @@
 </script>
 
 <template>
-    <div id="app_layout">
+    <div id="appLayout">
         <Navbar/>
         <Sidebar/>
-        <div id="app_main_wrapper" class="flex-col" :class="{ 'sidebar-collapse': isCollapse }">
+        <div id="appMainWrapper" class="flex-col" :class="{ 'sidebar-collapse': isCollapse }">
             <Tagview v-if="displayTagview"/>
             <Breadcrumb v-if="displayBreadcrumb"/>
-            <div id="app_main" class="flex-1">
+            <div id="appMain" class="flex-1">
                 <router-view v-slot="{ Component }">
                     <transition name="move" mode="out-in">
                         <keep-alive :include="tagsList">

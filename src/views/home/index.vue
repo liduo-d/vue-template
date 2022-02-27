@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div id='app_home' class="background-image-wrap">
+    <div id='appHome' class="background-image-wrap">
         <div class="home-wrap">
             <h1>Welcome To VueTemplate System !</h1>
         </div>
