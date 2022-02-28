@@ -13,13 +13,7 @@
 
     const router = useRouter();
     const store = useStore();
-    const handleMenu = menu => {
-        router.push(resolvePath(menu.path));
-        // store.commit('app/setTagsItem', {
-        //     name: menu.name,
-        //     path: resolvePath(menu.path)
-        // })
-    };
+    const handleMenu = menu => router.push(resolvePath(menu.path));
     const resolvePath = menuPath => {
         if (isExternal(menuPath)) {
             return menuPath;

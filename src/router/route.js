@@ -19,11 +19,7 @@ export const route = [
             title: 'Base',
             icon: 'HelpFilled'
         },
-        component: {
-            render() {
-                return h(resolveComponent('router-view'))
-            },
-        },
+        component: () => import ( /* webpackChunkName: "base" */ "@/views/base/index.vue"),
         children: [
             {
                 path: 'baseTable',
@@ -62,11 +58,7 @@ export const route = [
             title: 'Tools',
             icon: 'Setting'
         },
-        component: {
-            render() {
-                return h(resolveComponent('router-view'))
-            },
-        },
+        component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/index.vue"),
         children: [
             {
                 path: 'markdown',

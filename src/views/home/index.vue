@@ -1,3 +1,9 @@
+<script>
+    export default {
+        name: 'Home'
+    }
+</script>
+
 <script setup>
     import {mockAPI} from "@/api";
 
