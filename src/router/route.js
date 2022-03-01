@@ -94,6 +94,15 @@ export const route = [
                     icon: 'DArrowRight'
                 },
                 component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/jsondiffpatch/index.vue")
+            },
+            {
+                path: 'line',
+                name: 'Line',
+                meta: {
+                    title: 'Line',
+                    icon: 'Minus'
+                },
+                component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/line/index.vue")
             }
         ]
     },
