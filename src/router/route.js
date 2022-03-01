@@ -85,6 +85,15 @@ export const route = [
                     icon: 'Ticket'
                 },
                 component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/richtext/index.vue")
+            },
+            {
+                path: 'jsondiffpatch',
+                name: 'Jsondiffpatch',
+                meta: {
+                    title: 'Jsondiffpatch',
+                    icon: 'DArrowRight'
+                },
+                component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/jsondiffpatch/index.vue")
             }
         ]
     },
