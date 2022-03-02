@@ -34,7 +34,7 @@
                 endSocketGravity: [-192, -172]
             });
             _line.position();
-        });
+        }, 100);
     });
 
     onActivated(() => {
@@ -59,7 +59,7 @@
                     endSocketGravity: [-192, -172]
                 });
                 _line.position();
-            });
+            }, 100);
         }
     });
     onBeforeRouteLeave(() => {

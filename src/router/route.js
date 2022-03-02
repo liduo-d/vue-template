@@ -103,6 +103,15 @@ export const route = [
                     icon: 'Minus'
                 },
                 component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/line/index.vue")
+            },
+            {
+                path: 'drag',
+                name: 'Drag',
+                meta: {
+                    title: 'Drag',
+                    icon: 'Switch'
+                },
+                component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/drag/index.vue")
             }
         ]
     },
