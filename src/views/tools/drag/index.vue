@@ -71,6 +71,12 @@
 
 </script>
 
+<script>
+    export default {
+        name: 'Drag'
+    }
+</script>
+
 <template>
     <div class="flex-row">
         <div id="g1" class="group">
