@@ -1,14 +1,16 @@
 <script setup>
     import LeaderLine from 'leader-line-vue';
-    import {onMounted, onActivated, watch} from 'vue';
-    import {onBeforeRouteLeave} from 'vue-router';
+    import {onMounted, onActivated, watch, onBeforeUnmount} from 'vue';
+    import {onBeforeRouteLeave, useRoute} from 'vue-router';
     import {useStore} from 'vuex';
 
     const store = useStore();
+    const route = useRoute();
 
     let _line;
 
     watch(() => store.state.app.collapse, () => {
+        if (route.path !== '/line') return;
         if (_line) {
             _line.hide();
             setTimeout(() => {
@@ -33,17 +35,15 @@
                 startSocketGravity: [192, -172],
                 endSocketGravity: [-192, -172]
             });
-            _line.position();
         }, 100);
     });
 
     onActivated(() => {
-        if (_line) {
-            setTimeout(() => {
+        setTimeout(() => {
+            if (_line) {
                 _line.position();
-            }, 300);
-        } else {
-            setTimeout(() => {
+                _line.show();
+            } else {
                 _line = LeaderLine.setLine(
                     LeaderLine.obj.pointAnchor(document.getElementById('angel'), {x: '100%', y: 0}),
                     LeaderLine.obj.pointAnchor(document.getElementById('heart'), {x: 0, y: 0}),
@@ -58,14 +58,20 @@
                     startSocketGravity: [192, -172],
                     endSocketGravity: [-192, -172]
                 });
-                _line.position();
-            }, 100);
-        }
+            }
+        }, 100);
     });
+
+    onBeforeUnmount(() => {
+        if (_line) {
+            _line.remove();
+            _line = null;
+        }
+    })
+
     onBeforeRouteLeave(() => {
         if (_line) {
             _line.hide();
-            _line = null;
         }
     })
 </script>
