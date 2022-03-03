@@ -112,6 +112,15 @@ export const route = [
                     icon: 'Switch'
                 },
                 component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/drag/index.vue")
+            },
+            {
+                path: '/cropper',
+                name: 'Cropper',
+                meta: {
+                    title: 'Cropper',
+                    icon: 'Rank'
+                },
+                component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/cropper/index.vue")
             }
         ]
     },
