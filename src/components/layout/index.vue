@@ -11,7 +11,7 @@
     const store = useStore();
 
     const isCollapse = computed(() => store.state.app.collapse);
-    const tagsList = computed(() => store.state.app.tagsList);
+    const tagsList = computed(() => store.state.app.tagsList.map(item => item.name));
     const displayTagview = computed(() => store.state.app.displayTagview);
     const displayBreadcrumb = computed(() => store.state.app.displayBreadcrumb);
 

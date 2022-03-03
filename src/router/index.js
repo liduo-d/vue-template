@@ -1,12 +1,13 @@
 import {createRouter, createWebHashHistory} from "vue-router";
-import {routeList as routes} from "./route";
+import {routeList} from "./route";
 import store from '@/store';
 import {hasPermission} from "@/utils/permission";
 import {WHITE_ROUTE_PATH} from '@/constants/permission';
+import {parseRoute} from '@/utils/parse';
 
 const router = createRouter({
     history: createWebHashHistory(),
-    routes
+    routes: parseRoute(routeList)
 });
 
 router.beforeEach((to, from, next) => {

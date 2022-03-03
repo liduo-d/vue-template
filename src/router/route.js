@@ -26,7 +26,7 @@ export const route = [
         },
         children: [
             {
-                path: 'baseTable',
+                path: '/baseTable',
                 name: 'BaseTable',
                 meta: {
                     title: 'Base Table',
@@ -35,7 +35,7 @@ export const route = [
                 component: () => import ( /* webpackChunkName: "base" */ "@/views/base/baseTable/index.vue")
             },
             {
-                path: 'baseForm',
+                path: '/baseForm',
                 name: 'BaseForm',
                 meta: {
                     title: 'Base Form',
@@ -44,7 +44,7 @@ export const route = [
                 component: () => import ( /* webpackChunkName: "base" */ "@/views/base/baseForm/index.vue")
             },
             {
-                path: 'baseChart',
+                path: '/baseChart',
                 name: 'BaseChart',
                 meta: {
                     title: 'Base Chart',
@@ -69,7 +69,7 @@ export const route = [
         },
         children: [
             {
-                path: 'markdown',
+                path: '/markdown',
                 name: 'Markdown',
                 meta: {
                     title: 'Markdown',
@@ -78,7 +78,7 @@ export const route = [
                 component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/markdown/index.vue")
             },
             {
-                path: 'richtext',
+                path: '/richtext',
                 name: 'Richtext',
                 meta: {
                     title: 'Richtext',
@@ -87,7 +87,7 @@ export const route = [
                 component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/richtext/index.vue")
             },
             {
-                path: 'jsondiffpatch',
+                path: '/jsondiffpatch',
                 name: 'Jsondiffpatch',
                 meta: {
                     title: 'Jsondiffpatch',
@@ -96,7 +96,7 @@ export const route = [
                 component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/jsondiffpatch/index.vue")
             },
             {
-                path: 'line',
+                path: '/line',
                 name: 'Line',
                 meta: {
                     title: 'Line',
@@ -105,7 +105,7 @@ export const route = [
                 component: () => import ( /* webpackChunkName: "tools" */ "@/views/tools/line/index.vue")
             },
             {
-                path: 'drag',
+                path: '/drag',
                 name: 'Drag',
                 meta: {
                     title: 'Drag',
@@ -130,7 +130,7 @@ export const route = [
         },
         children: [
             {
-                path: 'authConfig',
+                path: '/authConfig',
                 name: 'AuthConfig',
                 meta: {
                     title: 'Auth Config',
