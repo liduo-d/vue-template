@@ -4,6 +4,11 @@ import store from '@/store';
 import {hasPermission} from "@/utils/permission";
 import {WHITE_ROUTE_PATH} from '@/constants/permission';
 import {parseRoute} from '@/utils/parse';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
+
+NProgress.configure({showSpinner: false, ease: 'ease', speed: 600});
+
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -11,6 +16,8 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+    NProgress.start();
+
     const role = localStorage.getItem('d-username');
     if (!role && to.path !== '/login') {
         next('/login');
@@ -21,6 +28,10 @@ router.beforeEach((to, from, next) => {
     } else {
         next();
     }
+});
+
+router.afterEach(() => {
+    NProgress.done();
 });
 
 export default router;
